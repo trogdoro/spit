@@ -1,6 +1,8 @@
 def Spit txt
   line = caller[0]
 
+  txt = txt.inspect rescue txt
+
   path, number = line.match(/(.+):(\d+)/)[1..2]
 
   label = IO.readlines("/projects/homerun/homerun/app/controllers/web/dev_controller.rb")[number.to_i - 1]
