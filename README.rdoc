@@ -2,7 +2,7 @@
 
 Spit variables out to your log in a noticeable color.  It adds a sensible label automatically.
 
-== Usage Example
+== Usage Examples
 
 You use it by doing something like this:
 
@@ -11,6 +11,14 @@ You use it by doing something like this:
 And it puts something like this in the log output (but with color):
 
   account: <#Account @name="Steve">
+
+To show the source of the line (filename, method, and line number) do something like this:
+
+  Spit.s account
+
+And it puts something like this in the log output (but with color):
+
+  foo_controller.index(38) account: <#Account @name="Steve">
 
 == The Point
 
