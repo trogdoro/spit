@@ -1,8 +1,34 @@
-= Spit
+== Summary
 
-Print variables in your rails log in a noticeable color.  It adds a sensible label automatically.
+Spit variables out to your log in a noticeable color.  It adds a sensible label automatically.
 
-The point is to make it easier during development to print out values of variables and have them stand out in the log... pretty simple concept.  There might be something out there like it - I didn't look around very much.
+== Usage Example
+
+You use it by doing something like this:
+
+  Spit account
+
+And it puts something like this in the log output:
+
+  *account:* <#Account @name="Steve">
+
+== The Point
+
+So you don't have to keep typing things like this over and over while developing / debugging:
+
+  print "foo: #{foo}"
+
+It's intended to make it easier during development to print out values of variables and have them stand out in the log... pretty simple concept.  There might be something out there like it - I didn't look around very much.
+
+== How it works
+
+The only tricky thing about spit is how it creates the label.  Under the covers it uses caller() to get the file and line, and then goes and grabs the label from the actual source file.  This isn't super-efficient, but will likely be almost intstantaneous unless you print out a rather large number of variables at once.
+
+== Future plans
+
+Support for multiple variables, like: Spit(account, user)
+
+Support for choosing a color, like: Spit.red account
 
 == Copyright
 
