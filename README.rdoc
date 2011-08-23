@@ -1,16 +1,8 @@
-= spit
+= Spit
 
-Description goes here.
+Print variables in your rails log in a noticeable color.  It adds a sensible label automatically.
 
-== Contributing to spit
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+The point is to make it easier during development to print out values of variables and have them stand out in the log... pretty simple concept.  There might be something out there like it - I didn't look around very much.
 
 == Copyright
 
