@@ -8,9 +8,9 @@ You use it by doing something like this:
 
   Spit account
 
-And it puts something like this in the log output:
+And it puts something like this in the log output (but with color):
 
-  *account:* <#Account @name="Steve">
+  account: <#Account @name="Steve">
 
 == The Point
 
