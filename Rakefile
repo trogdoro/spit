@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "spit"
   gem.homepage = "http://github.com/trogdoro/spit"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Print vars to your rails console with colors and labels.}
+  gem.description = %Q{Print vars to your rails console with colors and labels.}
   gem.email = "craig.muth@gmail.com"
   gem.authors = ["trogdoro"]
   # dependencies defined in Gemfile
