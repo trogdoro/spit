@@ -13,8 +13,8 @@ module Spit
 
     path, number = line.match(/(.+):(\d+)/)[1..2]
 
-    label = IO.readlines("/projects/homerun/homerun/app/controllers/web/dev_controller.rb")[number.to_i - 1]
-    label.strip!.sub!(/Spit\S+ /, '')
+    label = IO.readlines(path)[number.to_i - 1] rescue ""
+    label = label.strip.sub(/Spit\S+ /, '')
 
     label = "#{Spit.extract_label(Spit.parse_line line)} #{label}" if options[:source]
 
